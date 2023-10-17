@@ -30,9 +30,18 @@ export default function TweetModal({ tweet, Language, translation }) {
       tweet + "\nvia @ITFglobalunion"
     )}`;
 
-    window.open(sendLink);
+    const width = 550;
+    const height = 400;
+    const left = window.innerWidth / 2 - width / 2;
+    const top = window.innerHeight / 2 - height / 2;
 
-    navigate(`/post/${Language}`);
+    const windowFeatures = `width=${width},height=${height},left=${left},top=${top}`;
+
+    window.open(sendLink, "twitter", windowFeatures);
+
+    setTimeout(() => {
+      navigate(`/post/${Language}`);
+    }, 3000);
   };
 
   return (
@@ -46,7 +55,7 @@ export default function TweetModal({ tweet, Language, translation }) {
         aria-labelledby="modal-modal-title"
         aria-describedby="modal-modal-description"
       >
-        <Box sx={style}>
+        <Box sx={{ ...style, direction: Language == "العربية" && "rtl" }}>
           <div
             style={{
               backgroundColor: "#F7F8F8",

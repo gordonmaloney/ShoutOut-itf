@@ -7,6 +7,7 @@ import { Header } from "./Components/Header";
 import { Post } from "./Pages/Campaign/Post";
 import { Browse } from "./Pages/Browse/Browse";
 import { Footer } from "./Components/Footer";
+import { Create } from "./Pages/Create/Create";
 
 const App = () => {
   return (
@@ -14,6 +15,7 @@ const App = () => {
       <Header />
       <Routes>
         <Route path="/" exact element={<Browse />} />
+        <Route path="/create" exact element={<Create />} />
         <Route path="/campaign/:campId" element={<Campaign />} />
         <Route path="/post/:Language" element={<Post />} />
       </Routes>

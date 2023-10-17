@@ -124,4 +124,72 @@ export const Campaigns = [
       },
     ],
   },
+
+  {
+    id: "RMTU",
+    languages: [
+      {
+        language: "English",
+        content: {
+          title: "Demand pension dignity for India's workers",
+          blurb:
+            "Blurb about the campaign here, with some background information and context.\n\n          Not too much, just a little bit so that if someone lands on this page it makes sense to them and it's clear what they're meant to be doing.",
+          tweet:
+            "Hey @IndianGovernment! It's time to scrap the NPS and restore dignity to the pension system.\n\nWill you stand with the millions of workers who keep the country moving? @Modi @Etc",
+          link: "https://www.google.com",
+        },
+      },
+      {
+        language: "Español",
+        content: {
+          title:
+            "Exigir dignidad en las pensiones para los trabajadores de la India",
+          blurb:
+            "Breve descripción sobre la campaña aquí, con información de antecedentes y contexto.\n\nNo demasiada, solo un poco para que si alguien llega a esta página, les tenga sentido y quede claro lo que se supone que deben hacer.",
+          tweet:
+            "¡Hola @GobiernoDeLaIndia! Es hora de desechar el NPS y restaurar la dignidad al sistema de pensiones.\n\n¿Te unirás a los millones de trabajadores que mantienen en movimiento el país? @Modi @Etc",
+          link: "https://www.google.com",
+        },
+      },
+
+      {
+        language: "हिन्दी",
+        content: {
+          title:
+            "Exigir dignidad en las pensiones para los trabajadores de la India",
+          blurb:
+            "Breve descripción sobre la campaña aquí, con información de antecedentes y contexto.\n\nNo demasiada, solo un poco para que si alguien llega a esta página, les tenga sentido y quede claro lo que se supone que deben hacer.",
+          tweet:
+            "¡Hola @GobiernoDeLaIndia! Es hora de desechar el NPS y restaurar la dignidad al sistema de pensiones.\n\n¿Te unirás a los millones de trabajadores que mantienen en movimiento el país? @Modi @Etc",
+          link: "https://www.google.com",
+        },
+      },
+
+      {
+        language: "العربية",
+        content: {
+          title:
+            "Exigir dignidad en las pensiones para los trabajadores de la India",
+          blurb:
+            "Breve descripción sobre la campaña aquí, con información de antecedentes y contexto.\n\nNo demasiada, solo un poco para que si alguien llega a esta página, les tenga sentido y quede claro lo que se supone que deben hacer.",
+          tweet:
+            "¡Hola @GobiernoDeLaIndia! Es hora de desechar el NPS y restaurar la dignidad al sistema de pensiones.\n\n¿Te unirás a los millones de trabajadores que mantienen en movimiento el país? @Modi @Etc",
+          link: "https://www.google.com",
+        },
+      },
+
+      {
+        language: "Français",
+        content: {
+          title:
+            "Exigir dignidad en las pensiones para los trabajadores de la India",
+          blurb:
+            "Breve descripción sobre la campaña aquí, con información de antecedentes y contexto.\n\nNo demasiada, solo un poco para que si alguien llega a esta página, les tenga sentido y quede claro lo que se supone que deben hacer.",
+          tweet:
+            "¡Hola @GobiernoDeLaIndia! Es hora de desechar el NPS y restaurar la dignidad al sistema de pensiones.\n\n¿Te unirás a los millones de trabajadores que mantienen en movimiento el país? @Modi @Etc",
+          link: "https://www.google.com",
+        },
+      },
+    ],
+  },
 ];

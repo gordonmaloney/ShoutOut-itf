@@ -5,6 +5,9 @@ import { useWindowSize } from "@uidotdev/usehooks";
 import { English, EngBody } from "./Forms/English";
 import { Spanish, EsBody } from "./Forms/Spanish";
 import { Portuguese, PtBody } from "./Forms/Portuguese";
+import { FrBody, French } from "./Forms/French";
+import { ArBody, Arabic } from "./Forms/Arabic";
+
 export const Post = () => {
   const { Language } = useParams();
   const { width } = useWindowSize();
@@ -16,18 +19,18 @@ export const Post = () => {
           {Language == "English" && <EngBody />}
           {Language == "Español" && <EsBody />}
           {Language == "Português" && <PtBody />}
-
-          <img
-            style={{ display: width < 600 && "none" }}
-            src="https://www.itfglobal.org/sites/default/files/styles/node_main/public/node/news/image/1-JAS-IMG_9975.jpg?itok=lrO10hIu"
-            width="100%"
-          />
+          {Language == "French" && <FrBody />}
+          {Language == "العربية" && <ArBody />}
+          {Language == "हिन्दी" && <EngBody />}
         </Grid>
 
         <Grid item id="tweet" xs={12} sm={6}>
           {Language == "English" && <English />}
           {Language == "Español" && <Spanish />}
           {Language == "Português" && <Portuguese />}
+          {Language == "Français" && <French />}
+          {Language == "العربية" && <Arabic />}
+          {Language == "हिन्दी" && <English />}
         </Grid>
       </Grid>
     </div>

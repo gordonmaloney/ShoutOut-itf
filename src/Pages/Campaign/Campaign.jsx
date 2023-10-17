@@ -50,13 +50,13 @@ export const Campaign = () => {
 
           <h1
             className="campaignTitle"
-            style={{ textAlign: width < 600 ? "center" : "left" }}
+            style={{ textAlign: width < 600 ? "center" : Language == "العربية" ? "right" : "left", direction: Language == "العربية" && 'rtl' }}
           >
             {Campaign.languages[langIndex].content.title}
           </h1>
 
           {width > 599 && (
-            <p className="blurb">
+            <p className="blurb" style={{direction: Language == "العربية" && 'rtl'}}>
               {Campaign.languages[langIndex].content.blurb}
 
               {Campaign.languages[langIndex].content?.link && (
@@ -78,7 +78,7 @@ export const Campaign = () => {
 
         <Grid item id="tweet" xs={12} sm={6}>
           {width > 600 && (
-            <h2 style={{ margin: "35px 0 10px 0" }}>Your message:</h2>
+            <h2 style={{ margin: "35px 0 10px 0", direction: Language == "العربية" && 'rtl' }}>{translation.your_msg}</h2>
           )}
           <div className="TweetBox">
             <TextField
@@ -119,7 +119,7 @@ export const Campaign = () => {
 
         {width < 600 && (
           <Grid item xs={12}>
-            <p className="blurb">
+            <p className="blurb" style={{direction: Language == "العربية" && 'rtl'}}>
               {Campaign.languages[langIndex].content.blurb}
               {Campaign.languages[langIndex].content?.link && (
                 <>
