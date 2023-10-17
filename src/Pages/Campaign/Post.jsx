@@ -1,4 +1,5 @@
 import React from "react";
+import shareImg from "../../Images/shareImg.jpeg";
 import { useParams } from "react-router-dom";
 import { Grid } from "@mui/material";
 import { useWindowSize } from "@uidotdev/usehooks";
@@ -22,6 +23,8 @@ export const Post = () => {
           {Language == "French" && <FrBody />}
           {Language == "العربية" && <ArBody />}
           {Language == "हिन्दी" && <EngBody />}
+
+          <img src={shareImg} width="100%" />
         </Grid>
 
         <Grid item id="tweet" xs={12} sm={6}>
